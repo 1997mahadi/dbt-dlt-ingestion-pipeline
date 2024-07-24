@@ -1,0 +1,206 @@
+version: 2
+version_hash: GYv93cvN4dReWYkUw8r0up1QkPLKu8Z4f6qhvQtoUG0=
+engine_version: 9
+name: alpaca_crypto
+tables:
+  _dlt_version:
+    columns:
+      version:
+        data_type: bigint
+        nullable: false
+      engine_version:
+        data_type: bigint
+        nullable: false
+      inserted_at:
+        data_type: timestamp
+        nullable: false
+      schema_name:
+        data_type: text
+        nullable: false
+      version_hash:
+        data_type: text
+        nullable: false
+      schema:
+        data_type: text
+        nullable: false
+    write_disposition: skip
+    description: Created by DLT. Tracks schema updates
+  _dlt_loads:
+    columns:
+      load_id:
+        data_type: text
+        nullable: false
+      schema_name:
+        data_type: text
+        nullable: true
+      status:
+        data_type: bigint
+        nullable: false
+      inserted_at:
+        data_type: timestamp
+        nullable: false
+      schema_version_hash:
+        data_type: text
+        nullable: true
+    write_disposition: skip
+    description: Created by DLT. Tracks completed loads
+  crypto_data:
+    columns:
+      symbol:
+        data_type: text
+        nullable: true
+      timestamp:
+        data_type: timestamp
+        nullable: true
+      open:
+        data_type: double
+        nullable: true
+      high:
+        data_type: double
+        nullable: true
+      low:
+        data_type: double
+        nullable: true
+      close:
+        data_type: double
+        nullable: true
+      volume:
+        data_type: double
+        nullable: true
+      trade_count:
+        data_type: double
+        nullable: true
+      vwap:
+        data_type: double
+        nullable: true
+      _dlt_load_id:
+        data_type: text
+        nullable: false
+      _dlt_id:
+        data_type: text
+        nullable: false
+        unique: true
+    write_disposition: replace
+    x-normalizer:
+      seen-data: true
+  metadata:
+    columns:
+      start_date:
+        data_type: timestamp
+        nullable: true
+      end_date:
+        data_type: timestamp
+        nullable: true
+      timeframe:
+        data_type: text
+        nullable: true
+      _dlt_load_id:
+        data_type: text
+        nullable: false
+      _dlt_id:
+        data_type: text
+        nullable: false
+        unique: true
+    write_disposition: replace
+    x-normalizer:
+      seen-data: true
+  purchases:
+    columns:
+      purchase_id:
+        data_type: bigint
+        nullable: true
+      symbol:
+        data_type: text
+        nullable: true
+      amount:
+        data_type: double
+        nullable: true
+      price:
+        data_type: double
+        nullable: true
+      purchase_date:
+        data_type: timestamp
+        nullable: true
+      _dlt_load_id:
+        data_type: text
+        nullable: false
+      _dlt_id:
+        data_type: text
+        nullable: false
+        unique: true
+    write_disposition: replace
+    x-normalizer:
+      seen-data: true
+  _dlt_pipeline_state:
+    columns:
+      version:
+        data_type: bigint
+        nullable: false
+      engine_version:
+        data_type: bigint
+        nullable: false
+      pipeline_name:
+        data_type: text
+        nullable: false
+      state:
+        data_type: text
+        nullable: false
+      created_at:
+        data_type: timestamp
+        nullable: false
+      version_hash:
+        data_type: text
+        nullable: true
+      _dlt_load_id:
+        data_type: text
+        nullable: false
+      _dlt_id:
+        data_type: text
+        nullable: false
+        unique: true
+    write_disposition: append
+    file_format: preferred
+    x-normalizer:
+      seen-data: true
+  metadata__symbols:
+    columns:
+      value:
+        data_type: text
+        nullable: true
+      _dlt_id:
+        data_type: text
+        nullable: false
+        unique: true
+      _dlt_parent_id:
+        data_type: text
+        nullable: false
+        foreign_key: true
+      _dlt_list_idx:
+        data_type: bigint
+        nullable: false
+    parent: metadata
+    x-normalizer:
+      seen-data: true
+settings:
+  detections:
+  - iso_timestamp
+  default_hints:
+    not_null:
+    - _dlt_id
+    - _dlt_root_id
+    - _dlt_parent_id
+    - _dlt_list_idx
+    - _dlt_load_id
+    foreign_key:
+    - _dlt_parent_id
+    root_key:
+    - _dlt_root_id
+    unique:
+    - _dlt_id
+normalizers:
+  names: snake_case
+  json:
+    module: dlt.common.normalizers.json.relational
+previous_hashes:
+- EkMGBXMfBPZtP4LLU/9eq5+uAvI9zX+G1NWaL8L7r9Y=
+- uy2V2fmkc89KZf+owBOaXTlSFwwLZVXEQmRzEBsfhIY=

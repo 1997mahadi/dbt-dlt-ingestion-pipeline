@@ -1,0 +1,138 @@
+version: 2
+
+models:
+  - name: clean_crypto_data
+    description: "Cleaned cryptocurrency trading data including open, high, low, close prices, and volume for each timestamp."
+    columns:
+      - name: symbol
+        description: "The trading pair symbol (e.g., BTC/USD)."
+        tests:
+          - not_null
+          - unique
+      - name: timestamp
+        description: "The timestamp for the recorded data."
+        tests:
+          - not_null
+      - name: open
+        description: "The opening price of the cryptocurrency."
+      - name: high
+        description: "The highest price of the cryptocurrency."
+      - name: low
+        description: "The lowest price of the cryptocurrency."
+      - name: close
+        description: "The closing price of the cryptocurrency."
+      - name: volume
+        description: "The volume of trades for the timestamp."
+        
+  - name: dim_metadata
+    description: "Metadata about the data load, including the date range and timeframe."
+    columns:
+      - name: metadata_id
+        description: "Primary key for the metadata table."
+        tests:
+          - not_null
+          - unique
+      - name: start_date
+        description: "The start date of the data load period."
+      - name: end_date
+        description: "The end date of the data load period."
+      - name: timeframe
+        description: "The timeframe of the data load (e.g., 'Day')."
+        
+  - name: dim_symbols
+    description: "Dimensional table for the symbols being traded."
+    columns:
+      - name: symbol_id
+        description: "Primary key for the symbols table."
+        tests:
+          - not_null
+          - unique
+      - name: symbol
+        description: "The trading pair symbol (e.g., BTC/USD)."
+        tests:
+          - not_null
+          - unique
+      - name: name
+        description: "Name of the cryptocurrency (if available)."
+      - name: type
+        description: "Type of the symbol (e.g., 'crypto')."
+        
+  - name: dim_time
+    description: "Dimensional table for timestamps, providing breakdowns by year, month, day, etc."
+    columns:
+      - name: time_id
+        description: "Primary key for the time table."
+        tests:
+          - not_null
+          - unique
+      - name: timestamp
+        description: "The exact timestamp."
+        tests:
+          - not_null
+      - name: year
+        description: "Year part of the timestamp."
+      - name: month
+        description: "Month part of the timestamp."
+      - name: day
+        description: "Day part of the timestamp."
+      - name: hour
+        description: "Hour part of the timestamp."
+      - name: minute
+        description: "Minute part of the timestamp."
+      - name: second
+        description: "Second part of the timestamp."
+
+  - name: fact_crypto_prices
+    description: "Fact table containing cryptocurrency prices with reference to symbols and timestamps."
+    columns:
+      - name: symbol
+        description: "The trading pair symbol (e.g., BTC/USD)."
+        tests:
+          - not_null
+      - name: timestamp
+        description: "The timestamp for the recorded data."
+        tests:
+          - not_null
+      - name: open
+        description: "The opening price of the cryptocurrency."
+      - name: high
+        description: "The highest price of the cryptocurrency."
+      - name: low
+        description: "The lowest price of the cryptocurrency."
+      - name: close
+        description: "The closing price of the cryptocurrency."
+      - name: volume
+        description: "The volume of trades for the timestamp."
+      - name: symbol_id
+        description: "Foreign key to dim_symbols table."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_symbols')
+              field: symbol_id
+
+  - name: fact_purchases
+    description: "Fact table containing purchase details for cryptocurrencies."
+    columns:
+      - name: purchase_id
+        description: "Primary key for the purchases table."
+        tests:
+          - not_null
+          - unique
+      - name: symbol
+        description: "The trading pair symbol (e.g., BTC/USD)."
+        tests:
+          - not_null
+      - name: amount
+        description: "The amount of cryptocurrency purchased."
+      - name: price
+        description: "The price of the cryptocurrency at purchase."
+      - name: purchase_date
+        description: "The timestamp of the purchase."
+      - name: symbol_id
+        description: "Foreign key to dim_symbols table."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_symbols')
+              field: symbol_id

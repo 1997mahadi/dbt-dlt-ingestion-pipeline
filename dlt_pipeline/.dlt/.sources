@@ -1,0 +1,28 @@
+engine_version: 1
+sources:
+  alpaca_crypto_dlt:
+    is_dirty: false
+    last_commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+    last_commit_timestamp: '2024-07-11T00:34:37+02:00'
+    files:
+      alpaca_crypto_dlt/__init__.py:
+        commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+        git_sha: 788d8fdd227d87bf4cdad3e258e4de1f390efc10
+        sha3_256: 66fa8ce2165da8d01aac2dd3e4b76a908d8c0aba5849755a6eab0ccbf86b61fd
+      alpaca_crypto_dlt/helpers.py:
+        commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+        git_sha: f4775eee97b448c81d1db739d54853ad4d07ff39
+        sha3_256: b679034734eeb71651f849ad61938fd0d9351a0251305a03b9094c401a5517f6
+      alpaca_crypto_dlt/schemas.py:
+        commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+        git_sha: 0d4cef7e5723f7515c90098358f980d5b4ea4877
+        sha3_256: a1b47666183b7d03050ee67103affb3f93584d02ba21b4a4f3bd6a61176b9dc9
+      alpaca_crypto_dlt/settings.py:
+        commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+        git_sha: c3acfb9c6f4100d7b7a5cf34f1308a4b6d3efe0f
+        sha3_256: 2956c1577e5bcebb8f4ebed710e699571e0cad76b9b91f47d1dc7a07df1b5496
+      alpaca_crypto_dlt/README.md:
+        commit_sha: 4624264679b1a20e8a08ff139da4d177ca2c69c1
+        git_sha: 67e95e660cf9018cc3cac5defcc3a6d24590c8ab
+        sha3_256: 4b6c4ebe1bc0e7bca9506d7b2d5bc68bdfcc68f969d8371631e5db490ebb3abf
+    dlt_version_constraint: '>=0.3.8'
