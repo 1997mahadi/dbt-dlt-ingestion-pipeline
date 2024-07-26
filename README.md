@@ -9,6 +9,9 @@ The primary objective of this project is to streamline the ingestion, transforma
 
 This project specifically focuses on ingesting and analyzing cryptocurrency trading data from Alpaca. The data includes detailed trading information such as open, high, low, close prices, and volume for various cryptocurrency trading pairs.
 
+
+![Diagram](images/diagram5.png)
+
 ### 🔑 Key Points
 
 - **Robust and Scalable**: Designed to handle large volumes of data efficiently.
