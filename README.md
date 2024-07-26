@@ -1,53 +1,68 @@
-# DBT-DLT Ingestion Pipeline Project
+# DBT-DLT Ingestion Pipeline
 
-This project is designed to build a data ingestion pipeline using DLT and dbt to fetch and transform cryptocurrency data from Alpaca API, and then visualize it using tools like Power BI.
 
-## Project Structure
+## Overview
 
-- `dlt_pipeline`: Contains scripts and configurations for the DLT ingestion pipeline.
-- `my_dbt_project`: Contains dbt models, configurations, and tests for data transformation.
-- `scripts`: Utility scripts for data exploration and export.
+Welcome to the dbt-DLT Ingestion Pipeline project! This project leverages dlt (Data Loading Tool) to provide a robust and scalable data ingestion pipeline. dlt simplifies the process of loading data from various sources into data warehouses, making it ideal for Python developers and data engineers.
 
-## Prerequisites
+The primary objective of this project is to streamline the ingestion, transformation, and analysis of cryptocurrency trading data using dbt (data build tool) and DuckDB. By leveraging dbt, we aim to provide a robust and scalable ETL (Extract, Transform, Load) pipeline that ensures data quality and consistency across your analytical workflows.
 
-- Python 3.10+
--dlt
-- dbt 1.8.4
-- DuckDB
-- Alpaca API access
+This project specifically focuses on ingesting and analyzing cryptocurrency trading data from Alpaca. The data includes detailed trading information such as open, high, low, close prices, and volume for various cryptocurrency trading pairs.
 
-## Setup
+### Key Points
 
-1. Clone the repository:
+- **Robust and Scalable**: Designed to handle large volumes of data efficiently.
+- **Simplified Data Loading**: Easy integration with modern data stacks and seamless data ingestion process.
+- **Data Quality and Consistency**: Ensures high-quality data through robust ETL processes.
+
+This project is tailored for data professionals seeking to enhance their data ingestion and transformation processes, ensuring efficient and reliable data handling for analytical purposes.
+
+
+![Data Model](images/Untitled (5).png)
+
+## Purpose
+
+The primary purpose of this project is to facilitate the efficient ingestion and transformation of cryptocurrency trading data, making it accessible and insightful for data analysis and reporting. Given the rapid rise in popularity and complexity of cryptocurrencies, having a reliable and scalable data pipeline is essential for making informed decisions based on accurate and up-to-date market data. This project aims to empower data professionals with the tools needed to transform raw trading data into actionable insights.
+
+
+## Key Features
+
+- **Automated Data Ingestion**: Seamlessly fetch cryptocurrency trading data from Alpaca API.
+- **Dimensional Modeling**: Organize data into fact and dimension tables for efficient querying and reporting.
+- **Data Quality Assurance**: Implement robust data quality tests to ensure data integrity.
+- **Documentation**: Comprehensive documentation of data models for better understanding and maintenance.
+- **Integration with DuckDB**: Utilize DuckDB for efficient data storage and retrieval.
+- **Seamless Integration**: Compatible with modern data stacks (AWS, Google BigQuery, Snowflake, etc.).
+- **Community-Driven**: Leverage dltHub for sharing solutions and code snippets.
+- **Open-Source and Customizable**: Fully customizable to fit specific project needs.
+
+## Why Use dlt?
+
+- **Pythonic Data Ingestion**: Easy integration with Python tools and environments.
+- **Scalable**: Suitable for both small projects and large enterprises.
+- **Data Lineage**: Track and manage data lineage effectively.
+
+## Setup Instructions
+
+1. **Initialize the Pipeline**:
     ```bash
-    git clone https://github.com/1997mahadi/dbt-dlt-ingestion-pipeline.git
-    cd dbt-dlt-ingestion-pipeline
+    dlt init data_lineage bigquery
     ```
 
-2. Install Python dependencies:
-    ```bash
-    pip install -r requirements.txt
+2. **Configure the Pipeline**:
+    ```python
+    pipeline = dlt.pipeline(
+        pipeline_name='pipeline_store',
+        destination='bigquery',
+        dataset_name='sales_store'
+    )
+    load_info = pipeline.run(data, table_name='sales_info', write_disposition='replace')
     ```
 
-3. Configure your environment variables for Alpaca API.
+## Examples
 
-4. Run the DLT pipeline to ingest data:
-    ```bash
-    python dlt_pipeline/alpaca_crypto_dlt_pipeline.py
-    ```
+Include code snippets and examples here.
 
-5. Transform data using dbt:
-    ```bash
-    cd my_dbt_project
-    dbt run
-    ```
+## Community and Support
 
-6. Explore data:
-    ```bash
-    cd scripts
-    python explore_duckdb.py
-    ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Join the dltHub community for support and collaboration: [dltHub](https://dlthub.com)
