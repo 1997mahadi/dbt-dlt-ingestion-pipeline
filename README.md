@@ -165,6 +165,44 @@ This project is organized to maintain clear separation of concerns and enhance m
 - `requirements.txt`: Lists the dependencies needed for the project.
 - `logs/`: Directory for log files.
   - `dbt.log`: Log file for dbt operations.
+  - 
+  ## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have the following accounts and tools set up before getting started:
+
+#### Accounts:
+
+- **Alpaca Account**: For accessing cryptocurrency trading data.
+- **GitHub Account**: For version control and project collaboration.
+
+#### Installed Tools:
+
+- **Python**: Ensure Python is installed. [Download Python](https://www.python.org/downloads/)
+- **dbt (data build tool)**: For data transformation. [Install dbt](https://docs.getdbt.com/docs/installation)
+- **DuckDB**: For local data storage and querying. [Download DuckDB](https://duckdb.org/docs/installation)
+- **Git**: For version control. [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- **VS Code or any IDE**: For code editing. [Download VS Code](https://code.visualstudio.com/)
+- **dlt (Data Loading Tool)**: For efficient data ingestion. [Install dlt](https://github.com/dlt-hub/dlt)
+- **GitHub Codespaces**: For cloud-based development environments. [Set up GitHub Codespaces](https://github.com/features/codespaces)
+
+### Setting Up
+
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/1997mahadi/dbt-dlt-ingestion-pipeline.git
+   cd dbt-dlt-ingestion-pipeline
+   
+2. **Open in GitHub Codespaces**:
+   Navigate to your repository on GitHub.
+   Click Code > Open with Codespaces.
+   
+3. **Virtual Environment**:
+   python -m venv env
+   source env/bin/activate  # On Windows: `env\Scripts\activate`
+4. **Install Dependencies**:
+   pip install -r requirements.txt
 
 ## Community and Support
 
