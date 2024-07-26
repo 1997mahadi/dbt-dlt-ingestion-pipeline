@@ -42,26 +42,65 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 - **Scalable**: Suitable for both small projects and large enterprises.
 - **Data Lineage**: Track and manage data lineage effectively.
 
-## Setup Instructions
+## Repository Structure
 
-1. **Initialize the Pipeline**:
-    ```bash
-    dlt init data_lineage bigquery
-    ```
+```plaintext
+├── README.md
+├── alpaca_crypto.duckdb
+├── dlt_pipeline
+│   ├── README.md
+│   ├── alpaca_crypto.duckdb
+│   ├── alpaca_crypto_dlt_pipeline.py
+│   ├── crypto_data_dlt
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── exceptions.py
+│   │   ├── helpers.py
+│   │   ├── schemas.py
+│   │   └── settings.py
+│   └── schemas
+│       └── export
+├── logs
+│   └── dbt.log
+├── my_dbt_project
+│   ├── README.md
+│   ├── analyses
+│   ├── dbt_project.yml
+│   ├── logs
+│   │   └── dbt.log
+│   ├── macros
+│   ├── models
+│   │   ├── clean_crypto_data.sql
+│   │   ├── crypto_data.sql
+│   │   ├── dim_metadata.sql
+│   │   ├── dim_symbols.sql
+│   │   ├── dim_time.sql
+│   │   ├── distinct_symbols.sql
+│   │   ├── fact_crypto_prices.sql
+│   │   ├── fact_purchases.sql
+│   │   ├── metadata.sql
+│   │   ├── purchases.sql
+│   │   ├── schema.yml
+│   │   └── timestamps.sql
+│   ├── profiles.yml
+│   ├── seeds
+│   ├── snapshots
+│   ├── target
+│   │   ├── catalog.json
+│   │   ├── compiled
+│   │   ├── graph.gpickle
+│   │   ├── graph_summary.json
+│   │   ├── index.html
+│   │   ├── manifest.json
+│   │   ├── partial_parse.msgpack
+│   │   ├── run
+│   │   ├── run_results.json
+│   │   └── semantic_manifest.json
+│   └── tests
+├── requirements.txt
+└── scripts
+    ├── explore_duckdb.py
 
-2. **Configure the Pipeline**:
-    ```python
-    pipeline = dlt.pipeline(
-        pipeline_name='pipeline_store',
-        destination='bigquery',
-        dataset_name='sales_store'
-    )
-    load_info = pipeline.run(data, table_name='sales_info', write_disposition='replace')
-    ```
-
-## Examples
-
-Include code snippets and examples here.
 
 ## Community and Support
 
