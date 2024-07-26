@@ -18,7 +18,7 @@ This project specifically focuses on ingesting and analyzing cryptocurrency trad
 This project is tailored for data professionals seeking to enhance their data ingestion and transformation processes, ensuring efficient and reliable data handling for analytical purposes.
 
 
-![Diagram](images/Untitled (5).png)
+![Diagram](images/diagram5.png)
 
 ## 🎯Purpose
 
@@ -46,8 +46,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 
 ## 📂 Repository Structure
 
-
-```plaintext
+\``plaintext
 ├── README.md
 ├── alpaca_crypto.duckdb
 ├── dlt_pipeline
@@ -103,6 +102,9 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 ├── requirements.txt
 └── scripts
     └── explore_duckdb.py
+\``
+
+---
 
 ## 🧩 Modules
 
