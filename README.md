@@ -208,16 +208,24 @@ Ensure you have the following accounts and tools set up before getting started:
    pip install -r requirements.txt
 
 
-# Run Tests
+## Run the Pipeline and dbt Models
 ```plaintext
-## Data Ingestion Module: Ensure the environment is set up, then run tests
-pytest dlt_pipeline/crypto_data_dlt/tests
+## Data Ingestion Module: Ensure the environment is set up, then run :
+```sh
+python dlt_pipeline/alpaca_crypto_dlt_pipeline.py
 
-## Data Transformation Module: Ensure the environment is set up, then run tests
-pytest my_dbt_project/tests
+
+## Data Transformation Module: Ensure the environment is set up, then run :
+  ```sh
+  dbt debug
+  dbt run
+  dbt test
+
 
 ## Utility Scripts: Run tests for utility scripts
-pytest scripts/tests
+```sh
+python scripts/explore_duckdb.py
+
 
 ## Configuration and Logs: Run tests for configuration files and logging
 pytest logs/tests
