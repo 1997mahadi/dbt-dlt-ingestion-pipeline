@@ -195,13 +195,16 @@ Ensure you have the following accounts and tools set up before getting started:
    cd dbt-dlt-ingestion-pipeline
    
 2. **Open in GitHub Codespaces**:
+   ```sh
    Navigate to your repository on GitHub.
    Click Code > Open with Codespaces.
    
 3. **Virtual Environment**:
+    ```sh
    python -m venv env
    source env/bin/activate  # On Windows: `env\Scripts\activate`
 4. **Install Dependencies**:
+   ```sh
    pip install -r requirements.txt
 
 ## Community and Support
