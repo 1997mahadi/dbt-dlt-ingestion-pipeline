@@ -46,7 +46,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 
 ## 📂 Repository Structure
 
-\``plaintext
+\```plaintext
 ├── README.md
 ├── alpaca_crypto.duckdb
 ├── dlt_pipeline
@@ -102,7 +102,9 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 ├── requirements.txt
 └── scripts
     └── explore_duckdb.py
+\```
 
+---
 
 ## 🧩 Modules
 
@@ -162,7 +164,6 @@ This project is organized to maintain clear separation of concerns and enhance m
 - `requirements.txt`: Lists the dependencies needed for the project.
 - `logs/`: Directory for log files.
   - `dbt.log`: Log file for dbt operations.
-
 
 ## Community and Support
 
