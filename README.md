@@ -42,6 +42,8 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 - **Scalable**: Suitable for both small projects and large enterprises.
 - **Data Lineage**: Track and manage data lineage effectively.
 
+
+
 ## 📂 Repository Structure
 
 
@@ -101,10 +103,6 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 ├── requirements.txt
 └── scripts
     └── explore_duckdb.py
-
-
-
-
 
 ## 🧩 Modules
 
