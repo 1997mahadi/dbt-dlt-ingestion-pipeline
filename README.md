@@ -45,7 +45,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 
 
 ## 📂 Repository Structure
-
+---
 \```plaintext
 ├── README.md
 ├── alpaca_crypto.duckdb
