@@ -114,7 +114,8 @@ This project is organized to maintain clear separation of concerns and enhance m
 
 **Overview**: This module handles the extraction and loading of cryptocurrency trading data from the Alpaca API using DLT.
 
-**Folder**: `dlt_pipeline`
+**Folder**: [`dlt_pipeline`](dlt_pipeline)
+
 
 **Files**:
 - `alpaca_crypto_dlt_pipeline.py`: Main script for extracting and loading cryptocurrency data.
@@ -129,7 +130,7 @@ This project is organized to maintain clear separation of concerns and enhance m
 
 **Overview**: Utilizes dbt (data build tool) and DuckDB for transforming and modeling the ingested data.
 
-**Folder**: `my_dbt_project`
+**Folder**: [`my_dbt_project`](my_dbt_project)
 
 **Files**:
 - `dbt_project.yml`: dbt project configuration.
@@ -151,7 +152,7 @@ This project is organized to maintain clear separation of concerns and enhance m
 
 **Overview**: Contains additional scripts for data exploration and validation.
 
-**Folder**: `scripts`
+**Folder**: [`scripts`](scripts)
 
 **Files**:
 - `explore_duckdb.py`: Script to explore and validate data in DuckDB.
