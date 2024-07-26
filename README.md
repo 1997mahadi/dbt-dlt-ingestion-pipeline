@@ -48,6 +48,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 
 ```plaintext
 ├── README.md
+├──images
 ├── alpaca_crypto.duckdb
 ├── dlt_pipeline
 │   ├── README.md
