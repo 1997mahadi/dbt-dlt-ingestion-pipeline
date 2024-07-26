@@ -211,19 +211,16 @@ Ensure you have the following accounts and tools set up before getting started:
 ## Run the Pipeline and dbt Models
 ```plaintext
 ## Data Ingestion Module: Ensure the environment is set up, then run :
-```sh
 python dlt_pipeline/alpaca_crypto_dlt_pipeline.py
 
 
 ## Data Transformation Module: Ensure the environment is set up, then run :
-  ```sh
   dbt debug
   dbt run
   dbt test
 
 
 ## Utility Scripts: Run tests for utility scripts
-```sh
 python scripts/explore_duckdb.py
 
 
