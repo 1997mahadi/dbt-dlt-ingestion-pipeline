@@ -73,7 +73,7 @@ The pipeline configuration can be customized using the default settings in the `
 ## 📊 Data Model
 
 The following diagram represents the data model used in this project. Note that the time_dim is optional and is included for flexibility in time-based data divisions, although it may not be necessary for all use cases.
-![Diagram](../diagram2.png)
+![Diagram](dlt_pipeline/diagram2.png)
 
 
 ## 🔚 Conclusion
