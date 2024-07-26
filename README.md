@@ -102,9 +102,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 ├── requirements.txt
 └── scripts
     └── explore_duckdb.py
-\``
 
----
 
 ## 🧩 Modules
 
