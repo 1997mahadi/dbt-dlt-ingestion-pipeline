@@ -109,6 +109,7 @@ The primary purpose of this project is to facilitate the efficient ingestion and
 This project is organized to maintain clear separation of concerns and enhance maintainability. Each module handles a distinct part of the data pipeline. Below is an overview of each module:
 
 ### ➡️ Data Ingestion
+
 **Overview**: This module handles the extraction and loading of cryptocurrency trading data from the Alpaca API using DLT.
 
 **Folder**: `dlt_pipeline`
@@ -123,6 +124,7 @@ This project is organized to maintain clear separation of concerns and enhance m
   - `settings.py`: Configuration settings.
 
 ### ➡️ Data Transformation
+
 **Overview**: Utilizes dbt (data build tool) and DuckDB for transforming and modeling the ingested data.
 
 **Folder**: `my_dbt_project`
@@ -144,6 +146,7 @@ This project is organized to maintain clear separation of concerns and enhance m
   - `timestamps.sql`: Model for timestamps.
 
 ### ➡️ Utility Scripts
+
 **Overview**: Contains additional scripts for data exploration and validation.
 
 **Folder**: `scripts`
@@ -152,6 +155,7 @@ This project is organized to maintain clear separation of concerns and enhance m
 - `explore_duckdb.py`: Script to explore and validate data in DuckDB.
 
 ### ➡️ Configuration and Logs
+
 **Overview**: Manages project dependencies, configurations, and logs.
 
 **Files**:
