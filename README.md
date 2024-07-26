@@ -18,7 +18,7 @@ This project specifically focuses on ingesting and analyzing cryptocurrency trad
 This project is tailored for data professionals seeking to enhance their data ingestion and transformation processes, ensuring efficient and reliable data handling for analytical purposes.
 
 
-![Data Model](images/Untitled (5).png)
+![Diagram](images/Untitled (5).png)
 
 ## Purpose
 
