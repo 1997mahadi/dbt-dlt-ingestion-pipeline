@@ -19,7 +19,7 @@ This project is tailored for data professionals seeking to enhance their data in
 
 ## 🎯Purpose
 
-The primary purpose of this project is to facilitate the efficient ingestion and transformation of cryptocurrency trading data, making it accessible and insightful for data analysis and reporting. Given the rapid rise in popularity and complexity of cryptocurrencies, having a reliable and scalable data pipeline is essential for making informed decisions based on accurate and up-to-date market data. This project aims to empower data professionals with the tools needed to transform raw trading data into actionable insights.
+The project aims to efficiently ingest and transform cryptocurrency trading data, making it accessible for analysis and reporting. It provides a reliable and scalable data pipeline to help data professionals turn raw trading data into actionable insights.
 
 
 ##  🌟Key Features
