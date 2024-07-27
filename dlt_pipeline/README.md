@@ -1,4 +1,4 @@
-# 🚀 Alpaca Crypto Data Pipeline
+# 🚀 Alpaca crypto data pipeline
 
 ## 🌟 Overview
 
