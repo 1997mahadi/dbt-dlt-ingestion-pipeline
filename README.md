@@ -1,13 +1,9 @@
-# DBT-DLT Ingestion Pipeline
-
+# dbt-dlt-ingestion-pipeline
 
 ## 📍 Overview
 
-Welcome to the dbt-DLT Ingestion Pipeline project! This project leverages dlt (Data Loading Tool) to provide a robust and scalable data ingestion pipeline. dlt simplifies the process of loading data from various sources into data warehouses, making it ideal for Python developers and data engineers.
+The dbt-dlt ingestion pipeline project uses dlt (data loading tool) to create a scalable pipeline for loading data into data warehouses. The primary goal is to streamline the ingestion, transformation, and analysis of cryptocurrency trading data using dbt and DuckDB, focusing on data quality and consistency. This project specifically targets cryptocurrency trading data from Alpaca.
 
-The primary objective of this project is to streamline the ingestion, transformation, and analysis of cryptocurrency trading data using dbt (data build tool) and DuckDB. By leveraging dbt, we aim to provide a robust and scalable ETL (Extract, Transform, Load) pipeline that ensures data quality and consistency across your analytical workflows.
-
-This project specifically focuses on ingesting and analyzing cryptocurrency trading data from Alpaca. The data includes detailed trading information such as open, high, low, close prices, and volume for various cryptocurrency trading pairs.
 
 
 ![Diagram](images/diagram5.png)
