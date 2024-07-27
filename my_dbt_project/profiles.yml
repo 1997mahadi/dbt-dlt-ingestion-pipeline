@@ -1,4 +1,4 @@
-my_dbt_project:
+crypto_data_pipeline:
   target: dev
   outputs:
     dev:
