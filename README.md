@@ -38,7 +38,7 @@ The project aims to efficiently ingest and transform cryptocurrency trading data
 
 ```plaintext
 ├── README.md
-├──images
+├── images
 ├── alpaca_crypto.duckdb
 ├── dlt_pipeline
 │   ├── README.md
@@ -60,7 +60,6 @@ The project aims to efficiently ingest and transform cryptocurrency trading data
 │   ├── analyses
 │   ├── dbt_project.yml
 │   ├── logs
-│   │   └── dbt.log
 │   ├── macros
 │   ├── models
 │   │   ├── clean_crypto_data.sql
@@ -79,20 +78,11 @@ The project aims to efficiently ingest and transform cryptocurrency trading data
 │   ├── seeds
 │   ├── snapshots
 │   ├── target
-│   │   ├── catalog.json
-│   │   ├── compiled
-│   │   ├── graph.gpickle
-│   │   ├── graph_summary.json
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   ├── partial_parse.msgpack
-│   │   ├── run
-│   │   ├── run_results.json
-│   │   └── semantic_manifest.json
 │   └── tests
 ├── requirements.txt
 └── scripts
     └── explore_duckdb.py
+
 ```
 
 
