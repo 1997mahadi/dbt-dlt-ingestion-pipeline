@@ -86,21 +86,20 @@ The project aims to efficiently ingest and transform cryptocurrency trading data
 ```
 
 
-
 ## 🧩 Modules
 
-This project is organized to maintain clear separation of concerns and enhance maintainability. Each module handles a distinct part of the data pipeline. Below is an overview of each module:
+This project is organized to maintain clear separation of concerns and enhance maintainability. Each module handles a distinct part of the data pipeline.
 
 ### ➡️ Data Ingestion
 
-**Overview**: This module handles the extraction and loading of cryptocurrency trading data from the Alpaca API using DLT.
+Handles the extraction and loading of cryptocurrency trading data from the Alpaca API using DLT.
 
-**Folder**: [`dlt_pipeline`](dlt_pipeline)
+**Location**: [`dlt_pipeline`](dlt_pipeline)
 
+**Key Files**:
 
-**Files**:
 - `alpaca_crypto_dlt_pipeline.py`: Main script for extracting and loading cryptocurrency data.
-- `crypto_data_dlt/`: Contains supporting scripts and configurations.
+- Supporting scripts and configurations:
   - `__init__.py`: Initialization script.
   - `exceptions.py`: Custom exceptions for error handling.
   - `helpers.py`: Utility functions.
@@ -109,44 +108,35 @@ This project is organized to maintain clear separation of concerns and enhance m
 
 ### ➡️ Data Transformation
 
-**Overview**: Utilizes dbt (data build tool) and DuckDB for transforming and modeling the ingested data.
+Utilizes dbt (data build tool) and DuckDB for transforming and modeling the ingested data.
 
-**Folder**: [`my_dbt_project`](my_dbt_project)
+**Location**:  [`my_dbt_project`](my_dbt_project)
 
-**Files**:
+**Key Files**:
+
 - `dbt_project.yml`: dbt project configuration.
-- `models/`: Contains dbt models for various stages of data transformation.
-  - `clean_crypto_data.sql`: Cleaning script for crypto data.
-  - `crypto_data.sql`: Raw crypto data model.
-  - `dim_metadata.sql`: Dimension table for metadata.
-  - `dim_symbols.sql`: Dimension table for symbols.
-  - `dim_time.sql`: Dimension table for time.
-  - `distinct_symbols.sql`: Model for distinct symbols.
-  - `fact_crypto_prices.sql`: Fact table for crypto prices.
-  - `fact_purchases.sql`: Fact table for purchases.
-  - `metadata.sql`: Model for metadata.
-  - `purchases.sql`: Model for purchase data.
-  - `schema.yml`: Defines the schema and data quality tests.
-  - `timestamps.sql`: Model for timestamps.
+- `models/`: Contains dbt models for various stages of data transformation, such as cleaning crypto data, organizing into fact and dimension tables, and defining data quality tests.
 
 ### ➡️ Utility Scripts
 
-**Overview**: Contains additional scripts for data exploration and validation.
+Contains additional scripts for data exploration and validation.
 
-**Folder**: [`scripts`](scripts)
+**Location**: [`scripts`](scripts)
 
-**Files**:
+**Key File**:
+
 - `explore_duckdb.py`: Script to explore and validate data in DuckDB.
 
 ### ➡️ Configuration and Logs
 
-**Overview**: Manages project dependencies, configurations, and logs.
+Manages project dependencies, configurations, and logs.
 
-**Files**:
+**Key Files**:
+
 - `requirements.txt`: Lists the dependencies needed for the project.
-- `logs/`: Directory for log files.
-  - `dbt.log`: Log file for dbt operations.
-  - 
+- `logs/dbt.log`: Log file for dbt operations.
+
+
  ## 🚀 Getting Started
 
 ### Prerequisites
