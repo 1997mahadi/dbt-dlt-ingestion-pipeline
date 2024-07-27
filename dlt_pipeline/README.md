@@ -4,13 +4,13 @@
 
 The Alpaca Crypto Data Pipeline project is designed to help you seamlessly ingest, transform, and store cryptocurrency trading data from the Alpaca Crypto API into DuckDB. This pipeline allows you to fetch historical trading data, generate relevant metadata, and simulate purchase data, providing a comprehensive dataset for analysis and reporting.
 
-## 🤔 Why Use This Project?
+## 📦Why Use dlt?
 
-- **Automated Data Ingestion**: Streamline the process of collecting and storing large volumes of cryptocurrency data.
-- **Historical Data Analysis**: Access and analyze historical trading data to make informed decisions.
-- **Simulated Purchase Data**: Generate random purchase data to enrich your dataset and support various analytical scenarios.
-- **Efficient Data Storage**: Store the collected data in DuckDB, a fast and reliable analytical database.
-- **Flexibility and Customization**: Easily configure the data pipeline to fetch data for different cryptocurrencies, date ranges, and timeframes.
+- **Pythonic Data Ingestion**: Easy integration with Python tools and environments.
+- **Scalable**: Suitable for both small projects and large enterprises.
+- **Data Lineage**: Track and manage data lineage effectively.
+
+
 
 ## 🔧 Features
 
