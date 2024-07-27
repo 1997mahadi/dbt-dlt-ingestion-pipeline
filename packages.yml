@@ -1,0 +1,11 @@
+{
+  "packages": [
+    {
+      "repo": "https://github.com/1997mahadi/dbt-dlt-ingestion-pipeline",
+      "name": "my_dbt_project",
+      "description": "A dbt project for ingesting and processing crypto data.",
+      "author": "Mahadi Nagassou",
+      "version": "1.0"
+    }
+  ]
+}
