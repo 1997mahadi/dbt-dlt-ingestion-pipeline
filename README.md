@@ -18,13 +18,13 @@ This project is tailored for data professionals seeking to enhance their data in
 
 
 ## 🎯Purpose
-
+https://github.com/1997mahadi/dbt-dlt-ingestion-pipeline/edit/main/README.md
 The project aims to efficiently ingest and transform cryptocurrency trading data, making it accessible for analysis and reporting. It provides a reliable and scalable data pipeline to help data professionals turn raw trading data into actionable insights.
 
 
 ### 🌟 Why This Project Stands Out
 
-- **Automated Data Ingestion**: Effortlessly fetch and store cryptocurrency trading data from the Alpaca API.
+- **Automated Data Ingestion**: Effortlessly fetch and store cryptocurrency trading data from the [Alpaca API](https://alpaca.markets/docs/api-documentation/).
 - **Historical and Simulated Data Analysis**: Analyze historical trading data and generate simulated purchase data to enrich your analyses.
 - **Dimensional Modeling and Data Quality**: Organize data into efficient tables and ensure integrity with robust quality tests.
 - **Efficient Storage with DuckDB**: Utilize DuckDB for fast and reliable local data storage and querying.
