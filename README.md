@@ -164,7 +164,7 @@ This project is organized to maintain clear separation of concerns and enhance m
 - `logs/`: Directory for log files.
   - `dbt.log`: Log file for dbt operations.
   - 
-  ## 🚀 Getting Started
+ ## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -185,7 +185,7 @@ Ensure you have the following accounts and tools set up before getting started:
 - **dlt (Data Loading Tool)**: For efficient data ingestion. [Install dlt](https://github.com/dlt-hub/dlt)
 - **GitHub Codespaces**: For cloud-based development environments. [Set up GitHub Codespaces](https://github.com/features/codespaces)
 
-### Setting Up
+### Quick Starter
 
 1. **Clone the Repository**:
    ```sh
@@ -204,27 +204,17 @@ Ensure you have the following accounts and tools set up before getting started:
 4. **Install Dependencies**:
    ```sh
    pip install -r requirements.txt
+5. **Run the Pipeline**:
+    ```sh
+    python dlt_pipeline/alpaca_crypto_dlt_pipeline.py
+    
+6. **Run dbt Models:**:
+    ```sh
+   dbt debug
+   dbt run
+   dbt test
 
 
-## Run the Pipeline and dbt Models
-```plaintext
-# Data Ingestion Module: Ensure the environment is set up, then run :
-python dlt_pipeline/alpaca_crypto_dlt_pipeline.py
-
-
-# Data Transformation Module: Ensure the environment is set up, then run :
-  dbt debug
-  dbt run
-  dbt test
-
-
-# Utility Scripts: Run tests for utility scripts
-python scripts/explore_duckdb.py
-
-
-# Configuration and Logs: Run tests for configuration files and logging
-pytest logs/tests
-```
 ## Community and Support
 
 Join the dltHub community for support and collaboration: [dltHub](https://dlthub.com)
