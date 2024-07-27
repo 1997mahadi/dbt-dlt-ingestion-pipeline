@@ -18,7 +18,7 @@ This project is tailored for data professionals seeking to enhance their data in
 
 
 ## 🎯Purpose
-https://github.com/1997mahadi/dbt-dlt-ingestion-pipeline/edit/main/README.md
+
 The project aims to efficiently ingest and transform cryptocurrency trading data, making it accessible for analysis and reporting. It provides a reliable and scalable data pipeline to help data professionals turn raw trading data into actionable insights.
 
 
