@@ -1,4 +1,4 @@
-# My DBT Project
+# My dbt project
 
 This directory contains a DBT (Data Build Tool) project for managing and transforming cryptocurrency data. The project includes various models and tests to ensure data quality and integrity.
 
