@@ -1,5 +1,5 @@
 name: 'my_dbt_project'
-version: '1.0.0'
+version: '1.0.1'
 config-version: 2
 
 profile: 'crypto_data_pipeline'
