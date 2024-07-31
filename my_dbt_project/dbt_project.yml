@@ -1,8 +1,8 @@
-name: 'crypto_data_pipeline'
-version: '1.0'
+name: 'my_dbt_project'
+version: '1.0.0'
 config-version: 2
 
-profile: 'crypto_data_pipeline'
+profile: 'my_dbt_project'
 
 target-path: "target"
 clean-targets:
