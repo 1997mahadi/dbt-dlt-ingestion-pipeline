@@ -1,7 +1,0 @@
-crypto_data_pipeline:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: "/workspaces/dbt-dlt-ingestion-pipeline/dlt_pipeline/alpaca_crypto.duckdb"
-      schema: main
