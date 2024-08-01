@@ -1,5 +1,5 @@
-name: 'my_dbt_project'
-version: '1.0.0'
+name: 'crypto_dlt_pipeline'
+version: '1.0.1'
 config-version: 2
 require-dbt-version: [">=1.7.0", "<2.0.0"]
 
