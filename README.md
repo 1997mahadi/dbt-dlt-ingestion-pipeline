@@ -6,7 +6,7 @@ The dbt-dlt ingestion pipeline project uses dlt (data loading tool) to create a 
 
 
 
-![Diagram](images/diagram5.png)
+![Diagram](Diagram (1).jpg)
 
 ### 🔑 Key Points
 
